@@ -1,7 +1,7 @@
 # Личный проект «Шесть городов» [![Build status][travis-image]][travis-url]
 
 * Студент: [Данис Хаертдинов](https://up.htmlacademy.ru/react/5/user/827987).
-* Наставник: `Неизвестно`.
+* Наставник: [Константин Антонов](https://htmlacademy.ru/profile/rawle51).
 
 ---
 
