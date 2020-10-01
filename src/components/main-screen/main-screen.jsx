@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import PropTypes from "prop-types";
 
 const MainScreen = ({offersCount}) => {
 
@@ -265,6 +266,10 @@ const MainScreen = ({offersCount}) => {
     </div>
 
   );
+};
+
+MainScreen.propTypes = {
+  offersCount: PropTypes.number.isRequired,
 };
 
 export default MainScreen;
