@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/app/app";
-import {OFFERS_COUNT} from "./components/const";
+import {OFFERS_COUNT} from "./constants";
 
 ReactDOM.render(
     <App
