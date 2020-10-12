@@ -8,7 +8,7 @@ const OfferCard = (props) => {
   const {isPremium, photos, price, isFavorite, rating, title, type} = offer;
 
   const convertRatingToPercent = (ratingNumber) => {
-    return RATING.MAX / 100 * Math.round(ratingNumber);
+    return 100 * Math.round(ratingNumber) / RATING.MAX;
   };
 
   return (

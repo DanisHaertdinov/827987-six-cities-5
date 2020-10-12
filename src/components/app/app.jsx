@@ -6,12 +6,12 @@ import PropertyScreen from '../property-screen/property-screen';
 import LoginScreen from '../login-screen/login-screen';
 import FavoritesScreen from '../favorites-screen/favorites-screen';
 
-const App = ({offersCount}) => (
+const App = ({offers}) => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/">
         <MainScreen
-          offersCount = {offersCount}
+          offers = {offers}
         />
       </Route>
       <Route exact path="/login">
@@ -28,7 +28,7 @@ const App = ({offersCount}) => (
 );
 
 App.propTypes = {
-  offersCount: PropTypes.number.isRequired,
+  offers: PropTypes.array.isRequired,
 };
 
 export default App;
