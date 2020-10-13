@@ -1,4 +1,4 @@
 export const RATING = {
-  MIN: 1,
+  MIN: 0,
   MAX: 5,
 };

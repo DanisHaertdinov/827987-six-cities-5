@@ -1,15 +1,11 @@
 import React from "react";
-import {RATING} from '../../constants';
 import PropTypes from "prop-types";
 import {componentsPropTypes} from '../../prop-types';
+import {convertRatingToPercent} from '../../util/util';
 
 const OfferCard = (props) => {
   const {offer, onMouseOver} = props;
   const {isPremium, photos, price, isFavorite, rating, title, type} = offer;
-
-  const convertRatingToPercent = (ratingNumber) => {
-    return 100 * Math.round(ratingNumber) / RATING.MAX;
-  };
 
   return (
     <article className="cities__place-card place-card" onMouseOver={() => onMouseOver(offer)}>

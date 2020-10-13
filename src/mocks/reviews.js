@@ -8,7 +8,7 @@ export const reviews = [
     text: `Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur`
   },
   {
-    id: 11,
+    id: 12,
     avatar: `img/avatar-max.jpg`,
     name: `Max`,
     rate: 5,
@@ -16,7 +16,7 @@ export const reviews = [
     text: `Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur`
   },
   {
-    id: 11,
+    id: 13,
     avatar: `img/avatar-angelina.jpg`,
     name: `Angelina`,
     rate: 4.2,
@@ -24,7 +24,7 @@ export const reviews = [
     text: `Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur`
   },
   {
-    id: 11,
+    id: 14,
     avatar: `img/avatar-max.jpg`,
     name: `Max`,
     rate: 3,

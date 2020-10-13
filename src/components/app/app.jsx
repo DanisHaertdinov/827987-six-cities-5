@@ -6,7 +6,7 @@ import PropertyScreen from '../property-screen/property-screen';
 import LoginScreen from '../login-screen/login-screen';
 import FavoritesScreen from '../favorites-screen/favorites-screen';
 
-const App = ({offers}) => (
+const App = ({offers, reviews}) => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/">
@@ -21,7 +21,10 @@ const App = ({offers}) => (
         <FavoritesScreen/>
       </Route>
       <Route exact path="/offer/:id">
-        <PropertyScreen/>
+        <PropertyScreen
+          offer = {offers[1]}
+          reviews = {reviews}
+        />
       </Route>
     </Switch>
   </BrowserRouter>
@@ -29,6 +32,7 @@ const App = ({offers}) => (
 
 App.propTypes = {
   offers: PropTypes.array.isRequired,
+  reviews: PropTypes.array.isRequired
 };
 
 export default App;
