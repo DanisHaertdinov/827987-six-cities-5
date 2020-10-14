@@ -2,10 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import {componentsPropTypes} from '../../prop-types';
 import {convertRatingToPercent} from '../../util/util';
+import {Link} from "react-router-dom";
 
 const OfferCard = (props) => {
   const {offer, onMouseOver} = props;
-  const {isPremium, photos, price, isFavorite, rating, title, type} = offer;
+  const {id, isPremium, photos, price, isFavorite, rating, title, type} = offer;
 
   return (
     <article className="cities__place-card place-card" onMouseOver={() => onMouseOver(offer)}>
@@ -14,9 +15,9 @@ const OfferCard = (props) => {
         <span>Premium</span>
       </div>}
       <div className="cities__image-wrapper place-card__image-wrapper">
-        <a href="#">
+        <Link to={`offer/${id}`}>
           <img className="place-card__image" src={photos[0]} width={260} height={200} alt="Place image" />
-        </a>
+        </Link>
       </div>
       <div className="place-card__info">
         <div className="place-card__price-wrapper">
@@ -38,7 +39,7 @@ const OfferCard = (props) => {
           </div>
         </div>
         <h2 className="place-card__name">
-          <a href="#">{title}</a>
+          <Link to={`offer/${id}`}>{title}</Link>
         </h2>
         <p className="place-card__type">{type}</p>
       </div>
@@ -47,7 +48,7 @@ const OfferCard = (props) => {
 };
 
 OfferCard.propTypes = {
-  offer: PropTypes.shape(componentsPropTypes.offerCard),
+  offer: PropTypes.shape(componentsPropTypes.offer).isRequired,
   onMouseOver: PropTypes.func.isRequired,
 };
 

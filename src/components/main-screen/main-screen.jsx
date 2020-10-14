@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import OffersList from "../offers-list/offers-list";
+import {Link} from "react-router-dom";
 
 const MainScreen = ({offers}) => (
   <div className="page page--gray page--main">
@@ -15,11 +16,11 @@ const MainScreen = ({offers}) => (
           <nav className="header__nav">
             <ul className="header__nav-list">
               <li className="header__nav-item user">
-                <a className="header__nav-link header__nav-link--profile" href="#">
+                <Link className="header__nav-link header__nav-link--profile" to={`/favorites`}>
                   <div className="header__avatar-wrapper user__avatar-wrapper">
                   </div>
                   <span className="header__user-name user__name">Oliver.conner@gmail.com</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
