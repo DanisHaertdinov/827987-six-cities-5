@@ -1,6 +1,7 @@
 export const offers = [
   {
     id: 4232,
+    city: `Paris`,
     photos: [`img/apartment-03.jpg`, `img/room.jpg`, `img/studio-01.jpg`],
     title: `Lorem ipsum dolor sit amet, consectetur`,
     description: `Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur`,
@@ -21,6 +22,7 @@ export const offers = [
   },
   {
     id: 4233,
+    city: `Paris`,
     photos: [`img/apartment-01.jpg`, `img/apartment-02.jpg`, `img/apartment-03.jpg`],
     title: `Lorem ipsum dolor sit amet, consectetur`,
     description: `Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur`,
@@ -41,6 +43,7 @@ export const offers = [
   },
   {
     id: 4234,
+    city: `Cologne`,
     photos: [`img/apartment-03.jpg`, `img/room.jpg`],
     title: `Lorem ipsum dolor sit amet, consectetur`,
     description: `Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur`,
@@ -61,6 +64,7 @@ export const offers = [
   },
   {
     id: 4235,
+    city: `Cologne`,
     photos: [`img/apartment-03.jpg`, `img/room.jpg`, `img/studio-01.jpg`],
     title: `Lorem ipsum dolor sit amet, consectetur`,
     description: `Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur`,

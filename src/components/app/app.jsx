@@ -5,6 +5,7 @@ import MainScreen from "../main-screen/main-screen";
 import PropertyScreen from '../property-screen/property-screen';
 import LoginScreen from '../login-screen/login-screen';
 import FavoritesScreen from '../favorites-screen/favorites-screen';
+import {filterByBoolParameter} from '../../util/util';
 
 const App = ({offers, reviews}) => (
   <BrowserRouter>
@@ -18,7 +19,9 @@ const App = ({offers, reviews}) => (
         <LoginScreen/>
       </Route>
       <Route exact path="/favorites">
-        <FavoritesScreen/>
+        <FavoritesScreen
+          offers = {filterByBoolParameter(offers, `isFavorite`)}
+        />
       </Route>
       <Route exact path="/offer/:id">
         <PropertyScreen
