@@ -11,3 +11,8 @@ export const Cities = [
   `Hamburg`,
   `Dusseldorf`
 ];
+
+export const REVIEW_LENGTH = {
+  MAX: 300,
+  MIN: 50,
+};
