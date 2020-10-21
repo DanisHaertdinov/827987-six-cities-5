@@ -1,9 +1,10 @@
 import React from "react";
-import PropTypes from "prop-types";
 import OffersList from "../offers-list/offers-list";
 import {Link} from "react-router-dom";
+import {offers} from '../../mocks/offers';
 
-const MainScreen = ({offers}) => (
+
+const MainScreen = () => (
   <div className="page page--gray page--main">
     <header className="header">
       <div className="container">
@@ -69,7 +70,7 @@ const MainScreen = ({offers}) => (
         <div className="cities__places-container container">
           <section className="cities__places places">
             <h2 className="visually-hidden">Places</h2>
-            <b className="places__found">{offers.length} places to stay in Amsterdam</b>
+            <b className="places__found">{(offers.length ? offers.length : `none`)} places to stay in Amsterdam</b>
             <form className="places__sorting" action="#" method="get">
               <span className="places__sorting-caption">Sort by</span>
               <span className="places__sorting-type" tabIndex={0}>
@@ -104,9 +105,5 @@ const MainScreen = ({offers}) => (
   </div>
 
 );
-
-MainScreen.propTypes = {
-  offers: PropTypes.array.isRequired,
-};
 
 export default MainScreen;

@@ -24,9 +24,9 @@ const Offer = ({offer, reviews}) => {
     <section className="property">
       <div className="property__gallery-container container">
         <div className="property__gallery">
-          {photos.map((photo, i) => (
+          {photos.map((photo) => (
             <div
-              key={`property__image-${i}`}
+              key={photo}
               className="property__image-wrapper">
               <img className="property__image" src={photo} alt="Photo studio" />
             </div>
@@ -75,9 +75,9 @@ const Offer = ({offer, reviews}) => {
           <div className="property__inside">
             <h2 className="property__inside-title">What&apos;s inside</h2>
             <ul className="property__inside-list">
-              {goods.map((good, i) => (
+              {goods.map((good) => (
                 <li
-                  key={`property__inside-item-${i}`}
+                  key={good}
                   className="property__inside-item">
                   {good}
                 </li>

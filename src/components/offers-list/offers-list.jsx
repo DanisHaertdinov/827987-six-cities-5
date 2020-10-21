@@ -7,7 +7,7 @@ class OffersList extends PureComponent {
     super(props);
 
     this.state = {
-      activeOffer: null,
+      activeOfferId: null,
     };
   }
 
@@ -19,7 +19,7 @@ class OffersList extends PureComponent {
         {offers.map((offer) => <OfferCard
           key={offer.id}
           offer={offer}
-          onMouseOver={() => this.setState({activeOffer: offer})}
+          onMouseOver={() => this.setState({activeOfferId: offer.id})}
         />) }
       </div>
     );

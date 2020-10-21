@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 
 const OfferCard = (props) => {
   const {offer, onMouseOver} = props;
-  const {id, isPremium, photos, price, isFavorite, rating, title, type} = offer;
+  const {id, isPremium, photos, price, isFavorite, rating, title, type} = offer || {};
 
   return (
     <article className="cities__place-card place-card" onMouseOver={() => onMouseOver(offer)}>

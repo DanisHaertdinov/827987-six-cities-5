@@ -10,16 +10,12 @@ class ReviewsForm extends PureComponent {
       reviewText: ``,
     };
 
-    this.handleRatingChange = this.handleRatingChange.bind(this);
-    this.handleTextChange = this.handleTextChange.bind(this);
-  }
-
-  handleRatingChange(evt) {
-    this.setState({rating: evt.target.value});
-  }
-
-  handleTextChange(evt) {
-    this.setState({reviewText: evt.target.value});
+    this.handleRatingChange = (evt) => {
+      this.setState({rating: evt.target.value});
+    };
+    this.handleTextChange = (evt) => {
+      this.setState({reviewText: evt.target.value});
+    };
   }
 
   render() {

@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 
 const FavoritesCard = (props) => {
   const {offer} = props;
-  const {id, photos, price, rating, title, type} = offer;
+  const {id, photos, price, rating, title, type} = offer || {};
 
   return (
     <article className="favorites__card place-card">

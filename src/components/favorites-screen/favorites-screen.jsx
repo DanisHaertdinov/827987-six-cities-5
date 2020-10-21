@@ -36,9 +36,9 @@ const FavoritesScreen = ({offers}) => {
           <section className="favorites">
             <h1 className="favorites__title">Saved listing</h1>
             <ul className="favorites__list">
-              {Object.entries(offersMap).map(([cityName, cityOffers], i) => (
+              {Object.entries(offersMap).map(([cityName, cityOffers]) => (
                 <li
-                  key={`location${i}`}
+                  key={cityName}
                   className="favorites__locations-items">
                   <div className="favorites__locations locations locations--current">
                     <div className="locations__item">
@@ -48,9 +48,9 @@ const FavoritesScreen = ({offers}) => {
                     </div>
                   </div>
                   <div className="favorites__places">
-                    {cityOffers.map((offer, k) => (
+                    {cityOffers.map((offer) => (
                       <FavoritesCard
-                        key={`favorites-place${k}`}
+                        key={`favorites-place${offer.id}`}
                         offer={offer}
                       />
                     ))}
