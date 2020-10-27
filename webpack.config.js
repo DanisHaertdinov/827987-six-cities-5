@@ -20,7 +20,15 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                 },
-            }
+            },
+            {
+              test: /\.css$/i,
+              use: ['style-loader', 'css-loader']
+            },
+            {
+              test: /\.(png|jpg|gif)$/i,
+              use: ['url-loader']
+            },
         ],
     },
     resolve: {

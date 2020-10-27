@@ -2,6 +2,7 @@ import React from "react";
 import OffersList from "../offers-list/offers-list";
 import {Link} from "react-router-dom";
 import {offers} from '../../mocks/offers';
+import Map from "../map/map";
 
 
 const MainScreen = () => (
@@ -97,7 +98,7 @@ const MainScreen = () => (
             <OffersList offers={offers}/>
           </section>
           <div className="cities__right-section">
-            <section className="cities__map map" />
+            <Map offers={offers}/>
           </div>
         </div>
       </div>

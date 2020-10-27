@@ -1,7 +1,11 @@
 export const offers = [
   {
     id: 4232,
-    city: `Paris`,
+    coordinates: {
+      longitude: 4.85309666406198,
+      latitude: 52.3909553943508
+    },
+    city: `Amsterdam`,
     photos: [`img/apartment-03.jpg`, `img/room.jpg`, `img/studio-01.jpg`],
     title: `Lorem ipsum dolor sit amet, consectetur`,
     description: `Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur`,
@@ -22,7 +26,11 @@ export const offers = [
   },
   {
     id: 4233,
-    city: `Paris`,
+    coordinates: {
+      longitude: 4.85309666406198,
+      latitude: 52.369553943508
+    },
+    city: `Amsterdam`,
     photos: [`img/apartment-01.jpg`, `img/apartment-02.jpg`, `img/apartment-03.jpg`],
     title: `Lorem ipsum dolor sit amet, consectetur`,
     description: `Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur`,
@@ -43,7 +51,11 @@ export const offers = [
   },
   {
     id: 4234,
-    city: `Cologne`,
+    coordinates: {
+      longitude: 4.929309666406198,
+      latitude: 52.3909553943508
+    },
+    city: `Amsterdam`,
     photos: [`img/apartment-03.jpg`, `img/room.jpg`],
     title: `Lorem ipsum dolor sit amet, consectetur`,
     description: `Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur`,
@@ -64,7 +76,11 @@ export const offers = [
   },
   {
     id: 4235,
-    city: `Cologne`,
+    coordinates: {
+      longitude: 4.939309666406198,
+      latitude: 52.3809553943508
+    },
+    city: `Amsterdam`,
     photos: [`img/apartment-03.jpg`, `img/room.jpg`, `img/studio-01.jpg`],
     title: `Lorem ipsum dolor sit amet, consectetur`,
     description: `Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur`,
